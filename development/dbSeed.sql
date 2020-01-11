@@ -1,5 +1,8 @@
+USE`da_burger_db`;
 
-INSERT INTO items(name, eaten) VALUES('Hammer', 22);
-INSERT INTO items(name, eaten) VALUES('Jack', 220);
-INSERT INTO items(name, eaten) VALUES('Dorito', 2);
-INSERT INTO items(name, eaten) VALUES('Sunchip', 33);
+INSERT INTO burgers(name, eaten) VALUES('Classic', true);
+INSERT INTO burgers(name, eaten) VALUES('Impossible Burger', false);
+INSERT INTO burgers(name, eaten) VALUES('Chicken Burger', false);
+INSERT INTO burgers(name, eaten) VALUES('Bean Burger', true);
+
+SELECT * from burgers;

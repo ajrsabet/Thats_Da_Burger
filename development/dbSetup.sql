@@ -6,6 +6,6 @@ USE`da_burger_db`;
 CREATE TABLE IF NOT EXISTS`items`(
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    eaten BOOLIAN false,
+    eaten BOOLEAN NOT NULL DEFAULT false,
     PRIMARY KEY(id)
 );
