@@ -1,7 +1,7 @@
 ### Schema
 
-CREATE DATABASE burger_db;
-USE burger_db;
+CREATE DATABASE rvqrlsrd5w05y00b;
+USE rvqrlsrd5w05y00b;
 
 CREATE TABLE burgers
 (
