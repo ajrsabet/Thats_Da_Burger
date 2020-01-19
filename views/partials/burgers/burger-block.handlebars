@@ -1,16 +1,17 @@
 
+
 	<div class="row">
-		<div class="col-2" style="margin: 0; padding: 0;">
-			<button class="change-eat" data-id="{{id}}" data-newsleep="{{eaten}}">
-				{{#if eaten}}Eat!{{else}}Uneat!{{/if}}
-			</button>
-		</div>
-		<div class="col-8" style="margin: 0;">
+		<div class="col-9" style="margin: 0;">
 			<div class="burger-name">
 				{{name}}
 			</div>
 		</div>
-		<div class="col-2" style="margin: 0; padding: 0;">
-			<button class="delete-burger" data-id="{{this.id}}">X</button>
+		{{#if eaten}}<div class="col-3" style="margin: 0; padding: 0;">
+			<button class="change-eat" data-id="{{id}}" data-newsleep="{{eaten}}">EAT!</button>
 		</div>
+		{{else}}
+		<div class="col-3" style="margin: 0; padding: 0;">
+			<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+		</div>
+		{{/if}}
 	</div>
